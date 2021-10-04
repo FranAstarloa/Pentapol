@@ -1,0 +1,49 @@
+/* contact header */
+
+.topHeader {
+    height: 35px;
+    background: #e1e1e1;
+    line-height: 35px;
+    display: block;
+}
+
+.topHeader ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 35px;
+}
+
+.topHeader ul li {
+    width: 270px;
+    height: 35px;
+    line-height: 35px;
+    border-right: 1px solid #959595;
+    list-style-type: none;
+    font-family: 'LatinotypeArquitectaMedium';
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    float: left;
+    color: #959595;
+    cursor: pointer;
+}
+
+.topHeader ul li .fa {
+    margin-right: 7px;
+    line-height: 35px;
+    vertical-align: middle !important;
+    font-size: 15px;
+}
+
+.topHeader ul li:hover {
+    background: #959595;
+    color: #fff;
+}
+
+.facebook {
+    width: 79px !important;
+    border-right: none !important;
+}
+
+/* finish contact header */

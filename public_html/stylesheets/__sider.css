@@ -1,0 +1,59 @@
+.tituloProducto {
+    line-height: 80px;
+    color: #fff;
+    font-size: 90px;
+    font-family: 'LatinotypeArquitectaBlack';
+    margin-top: 120px;
+}
+
+.descProducto {
+    font-family: 'LatinotypeArquitectaMedium';
+    text-transform: uppercase;
+    color: #fff;
+    width: 450px;
+    font-size: 12px;
+}
+
+.botProducto {
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+    background: #d42332;
+    color: #fff;
+    font-family: 'LatinotypeArquitectaMedium';
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.botProducto:hover {
+    color: #d42332;
+    background: #fff;
+}
+
+.fichaProducto p {
+    width: 100%;
+    text-align: left;
+    line-height: 20px;
+    margin: 15px 0;
+}
+
+.imgProducto {
+    width: 488px;
+    float: left;
+    height: 230px;
+    background: url(../images/producto/imgPlaya.jpg) no-repeat center center;
+    background-size: cover;
+    margin-right: 48px;
+    margin-bottom: 48px;
+}
+
+.imgProducto:nth-child(2), .imgProducto:nth-child(4), .imgProducto:nth-child(6), .imgProducto:nth-child(8), .imgProducto:nth-child(10), .imgProducto:nth-child(12) {
+    margin-right: 0;
+}
+
+.fichaProducto {
+    width: 100%;
+    display: block;
+}

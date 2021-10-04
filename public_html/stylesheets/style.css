@@ -1,0 +1,793 @@
+@import './__contactHeader.css';
+@import './__header.css';
+@import './__sider.css';
+@import './__footer.css';
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.floater {
+    height: 50%;
+}
+
+.cl {
+    clear: both;
+}
+
+textarea:focus, input:focus {
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.contenedor {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.doble {
+    width: 400px !important;
+    border-right: 1px solid #959595;
+}
+
+.menuMobile {
+    display: none;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 35px;
+    position: absolute;
+    right: 0;
+}
+
+.cancelMenuMobile {
+    display: none;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 35px;
+    position: absolute;
+    right: 0;
+}
+
+.logo {
+    width: 150px;
+    height: 36px;
+    margin-top: 42px;
+    float: left;
+    font-size: 0;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.contNav {
+    width: 800px;
+    float: right;
+    margin-top: 40px;
+    display: block;
+}
+
+.contNav ul {
+    margin: 0;
+    padding: 0;
+    width: 1800px;
+}
+
+.contNav ul li {
+    float: left;
+    width: 120px;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'LatinotypeArquitectaMedium';
+    font-size: 12px;
+    color: #959595;
+    list-style-type: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.contNav ul li:hover {
+    color: #e1303f;
+    text-decoration: underline;
+}
+
+.contNav ul li:hover .prodNav {
+    display: block;
+}
+
+.contNav ul li ul {
+    margin: 0;
+    padding: 0;
+    width: 125px;
+    position: relative;
+    z-index: 1000;
+    background: #e1e1e1;
+    position: absolute;
+    display: none;
+}
+
+.contNav ul li ul li {
+    list-style-type: none;
+    float: none;
+}
+
+.contHome {
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    background: url(../images/slideHome.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.titSlider {
+    width: 1000px;
+    line-height: 40px;
+    height: 160px;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'LatinotypeArquitectaBlack';
+    left: 50%;
+    margin-left: -500px;
+    position: absolute;
+    top: 50%;
+    text-transform: uppercase;
+    z-index: 1;
+    margin-top: -40px;
+}
+
+.bajadaSlider {
+    width: 800px;
+    line-height: 40px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'LatinotypeArquitectaMedium';
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    left: 50%;
+    margin-left: -400px;
+    top: 50%;
+    z-index: 1
+}
+
+.botSlider {
+    cursor: pointer;
+    width: 180px;
+    left: 50%;
+    margin-left: -90px;
+    height: 40px;
+    background: #d42332;
+    color: #fff;
+    font-family: 'LatinotypeArquitectaMedium';
+    font-size: 14px;
+    position: absolute;
+    top: 400px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.botSlider:hover {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: -100px;
+    bottom: 35px;
+}
+
+/* header */
+
+.contHeader {
+    width: 100%;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.servicios, .contacto, .contEmpresa {
+    padding: 120px 0;
+}
+
+h2 {
+    font-family: 'LatinotypeArquitectaBold';
+    color: #111;
+    font-size: 30px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'LatinotypeArquitectaBook';
+    color: #111;
+    font-size: 18px;
+}
+
+.colServicio {
+    width: 328px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 40px;
+    color: #111;
+    padding-bottom: 40px;
+}
+
+.colServicio img {
+    width: 80px;
+    margin: 0 auto;
+    display: block;
+}
+
+.titServicio {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'LatinotypeArquitectaBold';
+    margin: 20px 0;
+}
+
+.colServicio p {
+    font-family: 'LatinotypeArquitectaBook';
+    font-size: 16px;
+    width: 65%;
+}
+
+.masInfo {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    border: 1px solid #111;
+    font-size: 14px;
+    font-family: 'LatinotypeArquitectaBold';
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.masInfo:hover {
+    background: #111;
+    color: #fff;
+}
+
+.contEmpresa {
+    width: 100%;
+    height: 400px;
+}
+
+.empresaIzquierda {
+    width: 50%;
+    float: left;
+    height: 450px;
+    background-color: #d7d7d7;
+}
+
+.empresaIzquierda {
+    background: url(../images/bkEmpresa.jpg)no-repeat center center;
+    background-size: cover;
+}
+
+.empresaDerecha {
+    padding-top: 30px;
+    height: 420px;
+    width: 50%;
+    float: left;
+    background-color: #d7d7d7;
+}
+
+.empresaDerecha p {
+    font-size: 14px;
+    width: 90%;
+    text-align: left;
+    padding: 10px 0;
+    line-height: 20px;
+}
+
+.contCols {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.titEmpresa {
+    font-family: 'LatinotypeArquitectaBold';
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 25px;
+    background: url(../images/tilde.png) no-repeat left center;
+    background-size: 20px 20px;
+}
+
+.colEmpresa {
+    width: 46%;
+    float: left;
+    margin-right: 8%;
+}
+
+.colEmpresa p {
+    width: 100%;
+}
+
+.intro {
+    text-transform: uppercase;
+}
+
+.bannerGoogle {
+    height: 200px;
+    background: url(../images/bkGoogle.jpg) no-repeat center center;
+    background-color: #ebebeb
+}
+
+.last {
+    margin-right: 0 !important;
+}
+
+.form {
+    width: 740px;
+    margin: 0 auto;
+    font-family: 'LatinotypeArquitectaBook';
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.formField {
+    width: 318px;
+    padding: 10px 15px;
+    border: 1px solid #777777;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-family: 'LatinotypeArquitectaBook';
+    font-size: 14px;
+}
+
+.izquierda {
+    margin-right: 40px;
+}
+
+.formArea {
+    width: 709px;
+    padding: 15px 15px;
+    height: 240px;
+    border: 1px solid #777777;
+    margin-top: 30px;
+    font-family: 'LatinotypeArquitectaBook';
+    font-size: 14px;
+    resize: none;
+}
+
+.botSubmit {
+    width: 120px;
+    margin: 0 auto;
+    height: 40px;
+    background: #d42332;
+    color: #fff;
+    font-family: 'LatinotypeArquitectaMedium';
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    border: 0;
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.botSubmit:hover {
+    background: #ebebeb;
+    color: #d42332;
+    border: 1px solid #d42332;
+}
+
+
+
+.error {
+    color: #fff;
+    font-weight: bold !important;
+    background-color: #ee1c25 !important;
+}
+
+.contInfo {
+    position: absolute;
+    left: 50%;
+    width: 500px;
+    margin-left: -500px;
+    height: 250px;
+    z-index: 10;
+    top: 100px;
+}
+
+.contInfo .titulo {
+    line-height: 80px;
+    color: #fff;
+    font-size: 70px;
+    font-family: 'LatinotypeArquitectaBlack';
+}
+
+.slide {
+    position: relative;
+}
+
+.contProducto {
+    width: 100%;
+    height: 450px;
+    overflow: auto;
+    background: url(../images/producto/bkProducto.jpg) no-repeat center center;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.contProducto2 {
+    width: 100%;
+    height: 450px;
+    overflow: auto;
+    background: url(../images/producto/bkGuarderia.jpg) no-repeat center center;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.proDestacada {
+    position: absolute;
+    width: 650px;
+    height: 260px;
+    left: 50%;
+    margin-left: -180px;
+    margin-top: -60px;
+}
+
+.proDestacada img {
+    width: 100%;
+    height: auto;
+}
+
+
+.contImagenes {
+    margin-top: 40px;
+}
+
+.contNavMobile {
+    display: none;
+}
+
+.contNavMobile ul {
+    margin: 0;
+    padding: 0;
+}
+
+.contNavMobile ul li {
+    text-align: center;
+    line-height: 40px;
+    font-family: 'LatinotypeArquitectaMedium';
+    font-size: 12px;
+    color: #333;
+    list-style-type: none;
+    position: relative;
+}
+
+.contNavMobile ul li ul li {
+    width: 100%;
+    color: #999;
+    line-height: 20px;
+    height: 20px;
+}
+
+.prodNavFooter {
+    margin-top: -430px;
+    position: absolute;
+}
+
+
+
+.flexslider {
+    margin: 40px 0;
+    height: 597px;
+}
+
+.mensajeEnviado {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    font-family: 'LatinotypeArquitectaMedium';
+    display: none;
+}
+
+/* SMALL screens ----------- */
+
+@media only screen and (min-width: 1281px) {}
+
+@media only screen and (max-width: 1023px) {
+    .logo {
+        margin-left: 10px;
+    }
+    .contenedor {
+        width: 768px;
+    }
+    .topHeader ul li {
+        width: 191px;
+    }
+    .facebook {
+        width: 79px !important;
+    }
+    .doble {
+        width: 304px !important;
+    }
+    .colServicio {
+        width: 240px;
+        margin-right: 24px;
+    }
+    .empresaDerecha {
+        height: 380px;
+        width: 100%;
+    }
+    .empresaIzquierda {
+        height: 300px;
+        width: 100%;
+    }
+    .contEmpresa {
+        height: 680px;
+    }
+    .tituloProducto, .descProducto, .botProducto {
+        margin-left: 20px;
+    }
+    .fichaProducto p {
+        padding: 0 20px;
+        width: initial;
+    }
+    .imgProducto {
+        width: 360px;
+    }
+    .proDestacada {
+        margin-left: -280px;
+    }
+    .menuMobile {
+        display: none;
+    }
+    .flexslider {
+        height: 416px;
+    }
+    .titSlider {
+        width: 90%;
+        line-height: 30px;
+        height: 60px;
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'LatinotypeArquitectaBlack';
+        position: absolute;
+        top: 200px;
+        left: initial;
+        margin-left: 5%;
+        margin-top: initial;
+    }
+}
+
+
+/* mobile view */
+@media only screen and (max-width: 767px) {
+    .menuMobile {
+        display: block;
+    }
+    .topHeader {
+        height: 120px;
+    }
+    .topHeader ul li {
+        width: 100%;
+        border: 0;
+    }
+    .contNav {
+        display: none;
+    }
+    .contenedor {
+        width: 320px;
+    }
+    .facebook {
+        width: 39px !important;
+        border-top: 1px solid;
+    }
+    .doble {
+        width: 279px !important;
+        border-top: 1px solid;
+    }
+    .colServicio {
+        width: 240px;
+        margin-right: 24px;
+    }
+    .empresaDerecha {
+        height: 380px;
+        width: 100%;
+    }
+    .empresaIzquierda {
+        height: 300px;
+        width: 100%;
+    }
+    .contEmpresa {
+        height: 680px;
+    }
+    .tituloProducto, .descProducto, .botProducto {
+        margin-left: 20px;
+    }
+    .tituloProducto {
+        font-size: 25px;
+    }
+    .fichaProducto p {
+        padding: 0 20px;
+        width: initial;
+    }
+    .imgProducto {
+        width: 360px;
+    }
+    .titSlider {
+        width: 90%;
+        line-height: 30px;
+        height: 60px;
+        color: #fff;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'LatinotypeArquitectaBlack';
+        position: absolute;
+        top: 200px;
+        left: initial;
+        margin-left: 5%
+    }
+    .bajadaSlider {
+        width: 80%;
+        line-height: 30px;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'LatinotypeArquitectaMedium';
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        top: 280px;
+        left: initial;
+        margin-left: 10%;
+    }
+    .colServicio {
+        width: 100%;
+        margin-right: 0;
+    }
+    .contEmpresa {
+        height: 1000px;
+    }
+    .colEmpresa {
+        width: 100%;
+        margin-right: 0;
+    }
+    .empresaDerecha {
+        height: 680px
+    }
+    .bannerGoogle {
+        background-size: cover;
+    }
+    .form {
+        width: 280px;
+    }
+    .izquierda {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .formField, .formArea {
+        width: 248px;
+    }
+    .claimFooter {
+        width: 100%;
+    }
+    .contNavFooter, .contNavFooter ul {
+        width: 100%;
+    }
+    .contNavFooter {
+        margin-bottom: 30px;
+        height: initial
+    }
+    .contNavFooter ul li {
+        width: 100%;
+    }
+    .contNavFooter ul li ul {
+        margin: 0;
+        padding: 0;
+        background: none;
+        position: relative;
+        display: block;
+        margin-top: initial;
+        width: 100%;
+    }
+    .contNavFooter ul li ul li {
+        width: 100%;
+        color: #999;
+        line-height: 20px;
+        height: 20px;
+    }
+    .prodNavFooter {
+        width: 100%;
+    }
+    .footer {
+        height: 600px;
+    }
+    .proDestacada {
+        width: 320px;
+        margin-left: -160px;
+        margin-top: 80px;
+    }
+    .descProducto {
+        width: 100%;
+    }
+    .imgProducto {
+        width: 320px;
+    }
+    .flexslider {
+        height: 194px;
+    }
+}
+
+@media only screen and (max-width: 320px) {}
+
+.topHeader ul li, .botSubmit, .masInfo {
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+.botSlider {
+    -webkit-transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.btnwhatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999999;
+}
+
+/* ----- FONTS ---------------------------------------------------------------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'LatinotypeArquitectaBook';
+    src: url('../fonts/LatinotypeArquitectaBook.eot');
+    src: url('../fonts/LatinotypeArquitectaBook.eot') format('embedded-opentype'), url('../fonts/LatinotypeArquitectaBook.woff2') format('woff2'), url('../fonts/LatinotypeArquitectaBook.woff') format('woff'), url('../fonts/LatinotypeArquitectaBook.ttf') format('truetype'), url('../fonts/LatinotypeArquitectaBook.svg#LatinotypeArquitectaBook') format('svg');
+}
+
+@font-face {
+    font-family: 'LatinotypeArquitectaMedium';
+    src: url('../fonts/LatinotypeArquitectaMedium.eot');
+    src: url('../fonts/LatinotypeArquitectaMedium.eot') format('embedded-opentype'), url('../fonts/LatinotypeArquitectaMedium.woff2') format('woff2'), url('../fonts/LatinotypeArquitectaMedium.woff') format('woff'), url('../fonts/LatinotypeArquitectaMedium.ttf') format('truetype'), url('../fonts/LatinotypeArquitectaMedium.svg#LatinotypeArquitectaMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'LatinotypeArquitectaHeavy';
+    src: url('../fonts/LatinotypeArquitectaHeavy.eot');
+    src: url('../fonts/LatinotypeArquitectaHeavy.eot') format('embedded-opentype'), url('../fonts/LatinotypeArquitectaHeavy.woff2') format('woff2'), url('../fonts/LatinotypeArquitectaHeavy.woff') format('woff'), url('../fonts/LatinotypeArquitectaHeavy.ttf') format('truetype'), url('../fonts/LatinotypeArquitectaHeavy.svg#LatinotypeArquitectaHeavy') format('svg');
+}
+
+@font-face {
+    font-family: 'LatinotypeArquitectaBold';
+    src: url('../fonts/LatinotypeArquitectaBold.eot');
+    src: url('../fonts/LatinotypeArquitectaBold.eot') format('embedded-opentype'), url('../fonts/LatinotypeArquitectaBold.woff2') format('woff2'), url('../fonts/LatinotypeArquitectaBold.woff') format('woff'), url('../fonts/LatinotypeArquitectaBold.ttf') format('truetype'), url('../fonts/LatinotypeArquitectaBold.svg#LatinotypeArquitectaBold') format('svg');
+}
+
+@font-face {
+    font-family: 'LatinotypeArquitectaBlack';
+    src: url('../fonts/LatinotypeArquitectaBlack.eot');
+    src: url('../fonts/LatinotypeArquitectaBlack.eot') format('embedded-opentype'), url('../fonts/LatinotypeArquitectaBlack.woff2') format('woff2'), url('../fonts/LatinotypeArquitectaBlack.woff') format('woff'), url('../fonts/LatinotypeArquitectaBlack.ttf') format('truetype'), url('../fonts/LatinotypeArquitectaBlack.svg#LatinotypeArquitectaBlack') format('svg');
+}
